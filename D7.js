@@ -26,11 +26,14 @@ function numbersForArray(array) {}
 */
 const arrayNumeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
-function checkPari(array) {
-  return array.filter((numero) => numero % 2 === 0);
-}
+// function checkPari(array) {
+//   return array.filter((numero) => numero % 2 === 0);
+// }
 
-console.log("ES3: ", checkPari(arrayNumeri));
+const checkPari2 = (array) => array.filter((numero) => numero % 2 === 0); //arrow function di quella fatta prima, riga 29.
+
+console.log("ES3: ", checkPari2(arrayNumeri));
+
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
@@ -260,6 +263,9 @@ console.log("ES13: ", esercizio13(movies));
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
+
+const esercizio14 = (imdbID) => movies.find((obj) => obj.imdbID === imdbID);
+console.log("ES14: ", esercizio14("tt4154796"));
 
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
