@@ -16,11 +16,16 @@ console.log("ES1: ", Concatenare("gaia", "giacometto"));
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
-
 let randomNumber = Math.floor(Math.random() * 101);
+const numbersForArray = (n) => {
+  let randomArray = [];
+  for (let i = 0; i < 10; i++) {
+    randomArray.push(n);
+  }
+  return randomArray;
+};
 
-function numbersForArray(array) {}
-
+console.log("ES2 : ", numbersForArray(randomNumber));
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
