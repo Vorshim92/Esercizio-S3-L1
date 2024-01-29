@@ -211,6 +211,19 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
+function esercizio9(array) {
+  let oldestFilm = array[0].Year;
+  array.forEach((obj) => {
+    if (obj.Year < oldestFilm) {
+      oldestFilm = obj.Year;
+    }
+  });
+
+  return oldestFilm;
+}
+
+console.log("ES9: ", esercizio9(movies));
+
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
