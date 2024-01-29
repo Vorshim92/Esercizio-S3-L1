@@ -11,7 +11,7 @@ function Concatenare(stringa1, stringa2) {
   return newString;
 }
 
-console.log("ES1: ", Concatenare("trota", "gioia"));
+console.log("ES1: ", Concatenare("gaia", "giacometto"));
 
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
@@ -36,7 +36,8 @@ console.log("ES3: ", checkPari(arrayNumeri));
 */
 
 function checkDispari(array) {
-  let sum = array.forEach((n) => {
+  let sum = 0;
+  array.forEach((n) => {
     sum += n;
   });
   return sum;
@@ -81,7 +82,12 @@ console.log("ES7: ", esercizio7(strArray));
 */
 
 let arrayDispari = [];
-function esercizio8(array) {}
+function esercizio8(n) {
+  array.forEach((n) => {});
+  return;
+}
+
+console.log("ES8: ", esercizio8(arrayDispari));
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
