@@ -228,6 +228,9 @@ console.log("ES9: ", esercizio9(movies));
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
 
+const numeroFilm = (array) => array.length;
+console.log("ES10: ", numeroFilm(movies));
+
 /* ESERCIZIO 11 (map)
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
