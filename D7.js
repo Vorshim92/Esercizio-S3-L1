@@ -243,6 +243,9 @@ console.log("ES11: ", titoliFilm);
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
 
+const esercizio12 = (array) => array.filter((obj) => obj.Year >= 2000);
+console.log("ES12: ", esercizio12(movies));
+
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
