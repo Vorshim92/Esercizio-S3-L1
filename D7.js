@@ -235,6 +235,10 @@ console.log("ES10: ", numeroFilm(movies));
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
 
+const esercizio11 = (array) => array.map((obj) => obj.Title);
+const titoliFilm = esercizio11(movies);
+console.log("ES11: ", titoliFilm);
+
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
