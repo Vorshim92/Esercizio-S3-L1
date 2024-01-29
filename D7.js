@@ -270,3 +270,8 @@ console.log("ES14: ", esercizio14("tt4154796"));
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
+
+const esercizio15 = (array, anno) =>
+  array.findIndex((obj) => parseInt(obj.Year) === anno);
+
+console.log("ES15: ", esercizio15(movies, 1984));
