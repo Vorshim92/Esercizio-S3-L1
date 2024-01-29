@@ -82,9 +82,11 @@ console.log("ES7: ", esercizio7(strArray));
 */
 
 let arrayDispari = [];
-function esercizio8(n) {
-  array.forEach((n) => {});
-  return;
+function esercizio8(array) {
+  for (let n = 1; n <= 99; n += 2) {
+    array.push(n);
+  }
+  return array;
 }
 
 console.log("ES8: ", esercizio8(arrayDispari));
